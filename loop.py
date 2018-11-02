@@ -14,7 +14,7 @@ async def on_ready():
     while True:
         await client.purge_from(client.get_channel(channelweb), limit=10, check=None, before=None, after=None, around=None)
         client.send_message(await client.send_message(client.get_channel(channelweb),"!nbj"))
-        time.sleep(15)
+        time.sleep(45)
 
 
 client.run(os.getenv('TOKEN'))
