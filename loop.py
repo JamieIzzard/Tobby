@@ -23,6 +23,7 @@ async def on_ready():
         time.sleep(45)
         client.send_message(await client.send_message(client.get_channel(channel),"!mp"))
         time.sleep(45)
+    return
 
 
 client.run(os.getenv('TOKEN'))
