@@ -5,6 +5,8 @@ import asyncio
 import time
 import os
 
+#Jamie est passé par là
+
 client = discord.Client()
 
 
