@@ -6,6 +6,7 @@ import os
 
 client = discord.Client()
 
+
 channelweb = '502510555618344960'   #Channel du webhook
 channel = '502399480176443394'      #Channel timer
 
