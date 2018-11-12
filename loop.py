@@ -2,7 +2,6 @@ import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
 import time
-import asyncio
 import os
 
 client = discord.Client()
@@ -12,7 +11,7 @@ channelweb = '502510555618344960'   #Channel du webhook
 channel = '502399480176443394'      #Channel timer
 
 @client.event
-async def on_ready():
+def on_ready():
     while True:
         client.send_message(await client.send_message(client.get_channel(channelweb),"!nbj"))
         time.sleep(45)
