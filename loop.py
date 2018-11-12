@@ -1,7 +1,6 @@
 import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
-import asyncio
 import time
 import os
 
@@ -24,6 +23,5 @@ async def on_ready():
         client.send_message(await client.send_message(client.get_channel(channel),"!mp"))
         time.sleep(45)
     return
-
 
 client.run(os.getenv('TOKEN'))
